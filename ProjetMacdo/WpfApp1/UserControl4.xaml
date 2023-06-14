@@ -1,0 +1,45 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             xmlns:ProjetMacdo="clr-namespace:ProjetMacdo;assembly=ProjetMacdo" x:Class="WpfApp1.UserControl4"
+             mc:Ignorable="d" 
+             d:DesignHeight="440" d:DesignWidth="550">
+
+    <Grid Background="White">
+        <ListView x:Name="LVMenus" Foreground="LightGray" >
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="BorderBrush" Value="Black" />
+                    <Setter Property="BorderThickness" Value="0.2" />
+
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListViewItem Height="250" Width="250" Margin="10,80,0,0">
+                <StackPanel Orientation="Vertical" Height="240" Width="240" >
+                    <Image Source="images/frites/frites.jpg" HorizontalAlignment="Center" Height="200" Width="400" />
+                    <Label Content="Menu Normal" FontSize="16" Foreground="Black"  HorizontalAlignment="Center"/>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem Height="250" Width="250" Margin="10,80,0,0">
+                <StackPanel Orientation="Vertical" Height="240" Width="240">
+                    <Image Source="images/frites/potatoes2.png" VerticalAlignment="Top" HorizontalAlignment="Center" Height="200" Width="400"></Image>
+                    <Label Content="Menu Maxi" FontSize="16" Foreground="Black" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </ListViewItem>
+        </ListView>
+
+        <Border BorderBrush="Black" BorderThickness="1" >
+            <StackPanel  VerticalAlignment="Bottom" Height="50" Orientation="Horizontal">
+                <Button x:Name="BoutonAjoutMenu" Content="Ajouter" Width="90" Margin="450,5,0,5" Click="AjoutMenu_Click"></Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

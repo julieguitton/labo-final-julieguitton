@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<ArrayOfCommande xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commande>
+    <PrixTotal>7.4</PrixTotal>
+    <Reglement>Especes</Reglement>
+    <Accompagnement />
+    <Boisson />
+    <Burger>
+      <Burger>
+        <Nom>BigMac</Nom>
+        <Prix>3.7</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/burgers/bigmac.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>Sur Place</Lieu>
+    <Date>2023-06-12T22:43:17.9655531+02:00</Date>
+    <Numero>1</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>122.1</PrixTotal>
+    <Reglement>Especes</Reglement>
+    <Accompagnement />
+    <Boisson />
+    <Burger>
+      <Burger>
+        <Nom>BigMac</Nom>
+        <Prix>3.7</Prix>
+        <Quantite>33</Quantite>
+        <Image>images/burgers/bigmac.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-12T22:43:41.9540567+02:00</Date>
+    <Numero>2</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>10.5</PrixTotal>
+    <Reglement>Especes</Reglement>
+    <Accompagnement />
+    <Boisson>
+      <Boisson>
+        <Nom>M M IceTea SG SG</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>3</Quantite>
+        <Image>images/boissons/iceteapeche.jpg</Image>
+        <Taille>2</Taille>
+        <Glacons>false</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger />
+    <Menu />
+    <Lieu>Sur Place</Lieu>
+    <Date>2023-06-12T22:45:41.2308418+02:00</Date>
+    <Numero>3</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>10.5</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson>
+      <Boisson>
+        <Nom>M CocaCola</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>3</Quantite>
+        <Image>images/boissons/coca.png</Image>
+        <Taille>2</Taille>
+        <Glacons>true</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger />
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-12T22:49:00.5027327+02:00</Date>
+    <Numero>4</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>35.5</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement>
+      <Accompagnement>
+        <Nom>G Frites</Nom>
+        <Prix>4</Prix>
+        <Quantite>4</Quantite>
+        <Image />
+        <Taille>3</Taille>
+      </Accompagnement>
+    </Accompagnement>
+    <Boisson>
+      <Boisson>
+        <Nom>G Fanta</Nom>
+        <Prix>4.2</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/boissons/fanta.png</Image>
+        <Taille>3</Taille>
+        <Glacons>true</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger>
+      <Burger>
+        <Nom>BigMac</Nom>
+        <Prix>3.7</Prix>
+        <Quantite>3</Quantite>
+        <Image>images/burgers/bigmac.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-12T22:50:06.8847316+02:00</Date>
+    <Numero>5</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>27.5</PrixTotal>
+    <Reglement>Especes</Reglement>
+    <Accompagnement>
+      <Accompagnement>
+        <Nom>M Frites</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>2</Quantite>
+        <Image />
+        <Taille>2</Taille>
+      </Accompagnement>
+    </Accompagnement>
+    <Boisson>
+      <Boisson>
+        <Nom>P IceTea SG</Nom>
+        <Prix>2.5</Prix>
+        <Quantite>5</Quantite>
+        <Image>images/boissons/iceteapeche.jpg</Image>
+        <Taille>1</Taille>
+        <Glacons>false</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger>
+      <Burger>
+        <Nom>Cheeseburger</Nom>
+        <Prix>2</Prix>
+        <Quantite>4</Quantite>
+        <Image>images/burgers/cheeseburger.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-12T22:52:19.1299172+02:00</Date>
+    <Numero>6</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>7</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson>
+      <Boisson>
+        <Nom>M CocaCola aa</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/boissons/coca.png</Image>
+        <Taille>2</Taille>
+        <Glacons>true</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger />
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-12T23:55:49.4740594+02:00</Date>
+    <Numero>7</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>24.9</PrixTotal>
+    <Reglement>Especes</Reglement>
+    <Accompagnement>
+      <Accompagnement>
+        <Nom>M Frites</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>2</Quantite>
+        <Image />
+        <Taille>2</Taille>
+      </Accompagnement>
+    </Accompagnement>
+    <Boisson>
+      <Boisson>
+        <Nom>M CocaCola SG</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>3</Quantite>
+        <Image>images/boissons/coca.png</Image>
+        <Taille>2</Taille>
+        <Glacons>false</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger>
+      <Burger>
+        <Nom>BigMac</Nom>
+        <Prix>3.7</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/burgers/bigmac.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>Sur Place</Lieu>
+    <Date>2023-06-13T14:06:50.6180965+02:00</Date>
+    <Numero>8</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>37.7</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement>
+      <Accompagnement>
+        <Nom>G Frites</Nom>
+        <Prix>4</Prix>
+        <Quantite>3</Quantite>
+        <Image />
+        <Taille>3</Taille>
+      </Accompagnement>
+    </Accompagnement>
+    <Boisson>
+      <Boisson>
+        <Nom>M IceTea</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/boissons/iceteapeche.jpg</Image>
+        <Taille>2</Taille>
+        <Glacons>true</Glacons>
+      </Boisson>
+      <Boisson>
+        <Nom>M CocaCola</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/boissons/coca.png</Image>
+        <Taille>2</Taille>
+        <Glacons>true</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger>
+      <Burger>
+        <Nom>280</Nom>
+        <Prix>3.9</Prix>
+        <Quantite>3</Quantite>
+        <Image>images/burgers/280.png</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-13T16:53:41.9834491+02:00</Date>
+    <Numero>9</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>7.4</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson />
+    <Burger>
+      <Burger>
+        <Nom>BigMac</Nom>
+        <Prix>3.7</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/burgers/bigmac.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-13T17:03:44.7021522+02:00</Date>
+    <Numero>10</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>10.5</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson>
+      <Boisson>
+        <Nom>M IceTea</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>3</Quantite>
+        <Image>images/boissons/iceteapeche.jpg</Image>
+        <Taille>2</Taille>
+        <Glacons>true</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger />
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-13T17:09:07.5564363+02:00</Date>
+    <Numero>11</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>4.2</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson>
+      <Boisson>
+        <Nom>G CocaCola</Nom>
+        <Prix>4.2</Prix>
+        <Quantite>1</Quantite>
+        <Image>images/boissons/coca.png</Image>
+        <Taille>3</Taille>
+        <Glacons>true</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger />
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-13T17:12:23.3384246+02:00</Date>
+    <Numero>12</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>10.5</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson>
+      <Boisson>
+        <Nom>M IceTea</Nom>
+        <Prix>3.5</Prix>
+        <Quantite>3</Quantite>
+        <Image>images/boissons/iceteapeche.jpg</Image>
+        <Taille>2</Taille>
+        <Glacons>true</Glacons>
+      </Boisson>
+    </Boisson>
+    <Burger />
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-13T17:57:23.6463692+02:00</Date>
+    <Numero>13</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>7.4</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson />
+    <Burger>
+      <Burger>
+        <Nom>BigMac</Nom>
+        <Prix>3.7</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/burgers/bigmac.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-14T13:55:38.0335275+02:00</Date>
+    <Numero>14</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>7.4</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson />
+    <Burger>
+      <Burger>
+        <Nom>BigMac</Nom>
+        <Prix>3.7</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/burgers/bigmac.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-14T14:29:06.7753821+02:00</Date>
+    <Numero>15</Numero>
+  </Commande>
+  <Commande>
+    <PrixTotal>7.4</PrixTotal>
+    <Reglement>Carte Bancaire</Reglement>
+    <Accompagnement />
+    <Boisson />
+    <Burger>
+      <Burger>
+        <Nom>BigMac</Nom>
+        <Prix>3.7</Prix>
+        <Quantite>2</Quantite>
+        <Image>images/burgers/bigmac.jpg</Image>
+      </Burger>
+    </Burger>
+    <Menu />
+    <Lieu>A Emporter</Lieu>
+    <Date>2023-06-14T14:30:05.5881669+02:00</Date>
+    <Numero>16</Numero>
+  </Commande>
+</ArrayOfCommande>
