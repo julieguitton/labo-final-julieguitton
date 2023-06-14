@@ -26,7 +26,7 @@ namespace WpfApp1
     {
         public ObservableCollection<Burger> listburger = new ObservableCollection<Burger>(Burger.LoadBurgersFromCSV("C:/Users/Julie/source/repos/labo-final-julieguitton/ProjetMacdo/WpfApp1/fichiers/burgers.csv"));
         public ObservableCollection<Boisson> listboisson = new ObservableCollection<Boisson>(Boisson.LoadBoissonsFromCSV("C:/Users/Julie/source/repos/labo-final-julieguitton/ProjetMacdo/WpfApp1/fichiers/boissons.csv"));
-      
+        
         
         UserControl1 userControl1 = new UserControl1();
         UserControl2 userControl2 = new UserControl2();
@@ -123,7 +123,8 @@ namespace WpfApp1
                     FastFood.CommandeEnCours.Reglement = fenetre2.ModePaiement;
                     FastFood.CommandeEnCours.Numero = Commande.numCommande;
                     FastFood.CommandeEnCours.Date = DateTime.Now;
-                    FastFood.Instance.AjouterCommande(FastFood.CommandeEnCours);                    
+                    FastFood.Instance.AjouterCommande(FastFood.CommandeEnCours);
+                    
                     FastFood.CommandeEnCours.PrixTotal = FastFood.CommandeEnCours.CalculerPrixTotal();
                     FastFood.Instance.ViderListeProduit();
                     FastFood.Instance.ResetCommandeEnCours();

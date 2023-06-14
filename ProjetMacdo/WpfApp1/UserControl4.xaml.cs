@@ -66,7 +66,7 @@ namespace WpfApp1
                                 menu.Boisson.Taille = 3;
                                 menu.Accompagnement.Taille = 3;
                                 menu.CalculPrixMenu();
-                            }
+        }
                             MainWindow mainWindow = Window.GetWindow(Parent) as MainWindow;
                             int trouve = 0;
                             FastFood.CommandeEnCours.AjouterMenu(menu);
@@ -75,7 +75,7 @@ namespace WpfApp1
                             mainWindow.TBPrix.Text = FastFood.CommandeEnCours.CalculerPrixTotal().ToString() + " €";
                                 }
 
-                            }
+        }
                         else
                             MessageBox.Show("Menu annulé (Burger)");
                     }
@@ -85,7 +85,7 @@ namespace WpfApp1
                 else
                     MessageBox.Show("Menu annulé(Frites)");
             }
-        }
+    }
 
     
 }

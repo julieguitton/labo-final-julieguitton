@@ -55,7 +55,7 @@ namespace WpfApp1
                     else { b.Taille = 3; }
 
 
-                    FastFood.CommandeEnCours.AjouterFrites(b);
+                        FastFood.CommandeEnCours.AjouterFrites(b);
                     FastFood.Instance.RemplirListeProduit();
                     mainWindow.TBPrix.Text = FastFood.CommandeEnCours.CalculerPrixTotal().ToString() + " €";
                 }

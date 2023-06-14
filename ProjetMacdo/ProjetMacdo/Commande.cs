@@ -64,7 +64,7 @@ namespace ProjetMacdo
                 if (PropertyChanged != null)
                 {
                     PropertyChanged(this, new PropertyChangedEventArgs("PrixTotal"));
-                }
+        }
             }
         }
         public string Reglement
@@ -158,14 +158,14 @@ namespace ProjetMacdo
             foreach (Accompagnement frite in accompagnements)
             {
                 if (frite.Equals(f))
-                {
+        {         
                     trouve = 1;
                     frite.Quantite += 1;
                     break;
                 }
-            }
+        }
             if (trouve != 1)
-            {
+        {
                 accompagnements.Add(f);
             }
             prixTotal = CalculerPrixTotal();
@@ -176,14 +176,14 @@ namespace ProjetMacdo
             foreach (Menu menu in menus)
             {
                 if (menu.Equals(m))
-                {
+        {
                     trouve = 1;
                     menu.Quantite += 1;
                     break;
                 }
-            }
+        }
             if (trouve != 1)
-            {
+        {
                 menus.Add(m);
             }
             prixTotal = CalculerPrixTotal();
