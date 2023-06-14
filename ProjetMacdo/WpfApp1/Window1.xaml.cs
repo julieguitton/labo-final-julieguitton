@@ -39,7 +39,7 @@ namespace WpfApp1
                 ImageLieu.DataContext = FastFood.Instance.Commandes[i].Lieu;
                 ImageReglement.DataContext = FastFood.Instance.Commandes[i].Reglement;
 
-
+                
                 LabelReglement.DataContext = FastFood.Instance.Commandes[i].Reglement;
                 GridBurger.DataContext = FastFood.Instance.Commandes[i].Burger;
                 GridBoisson.DataContext = FastFood.Instance.Commandes[i].Boisson;

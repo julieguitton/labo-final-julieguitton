@@ -124,5 +124,5 @@ namespace ProjetMacdo
                    Glacons == other.Glacons && Taille == other.Taille;
         }
 
-    }
+	}
 }

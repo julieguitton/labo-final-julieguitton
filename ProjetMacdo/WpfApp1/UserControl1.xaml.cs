@@ -37,9 +37,30 @@ namespace WpfApp1
                 int i = BurgersLV.SelectedIndex;
                 if(i>=0)
                 {
+                    int trouve = 0;
                     Burger b = new Burger(mainWindow.listburger[i]);
                     b.Quantite = quantite;
-                    FastFood.CommandeEnCours.AjouterBurger(b);
+
+                    foreach (Produit produit in mainWindow.listproduit)
+                    {
+                        if (produit.Nom == b.Nom)
+                        {
+                            trouve = 1;
+                            produit.Quantite += b.Quantite;
+                            foreach (Burger burger in FastFood.CommandeEnCours.Burger)
+                            {
+                                if (burger.Nom == b.Nom)
+                                {
+                                    burger.Quantite = produit.Quantite;
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                    if (trouve != 1)
+                    {
+                        FastFood.CommandeEnCours.AjouterBurger(b);
                     FastFood.Instance.RemplirListeProduit();       
                     mainWindow.TBPrix.Text = FastFood.CommandeEnCours.CalculerPrixTotal().ToString() + " €";
                 }
