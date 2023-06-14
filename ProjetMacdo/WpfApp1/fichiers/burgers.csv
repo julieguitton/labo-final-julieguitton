@@ -1,0 +1,9 @@
+﻿Nom;Prix;Quantité;Image
+BigMac;3,70;1;images/burgers/bigmac.jpg
+280;3,90;1;images/burgers/280.png
+CBO;3,90;1;images/burgers/cbo.png
+Cheeseburger;2,00;1;images/burgers/cheeseburger.jpg
+DoubleCheeseburger;3,20;1;images/burgers/doublecheese.png
+Hamburger;1,80;1;images/burgers/hamburger.jpg
+McChicken;3,30;1;images/burgers/mcchicken.png
+TripleCheeseburger;4,00;1;images/burgers/triplecheese.png

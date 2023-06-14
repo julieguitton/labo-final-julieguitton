@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.FenetreCodeAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Code Admin" Height="150" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Veuillez entrez le code administrateur pour continuez"></Label>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Label Content="Mot de passe : " VerticalAlignment="Center"></Label>
+            <PasswordBox x:Name="MdpBox" Width="100" Height="20" ></PasswordBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Button x:Name="AnnulerBouton" Click="AnnulerBouton_Click" Content="Annuler" Height="30" Width="90" Margin="30,0,0,0"></Button>
+            <Button x:Name="ValiderBouton" Click="ValiderBouton_Click" Content="Valider" Height="30" Width="90" Margin="50,0,0,0"></Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>

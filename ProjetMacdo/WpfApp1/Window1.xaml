@@ -1,0 +1,154 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:ProjetMacdo="clr-namespace:ProjetMacdo;assembly=ProjetMacdo" x:Class="WpfApp1.Window1"
+        mc:Ignorable="d"
+        Title="Historique des Commandes" Height="490" Width="800">
+
+    <Window.Resources>
+        <local:ColorConverter x:Key="ColorConverter"/>
+    </Window.Resources>
+    <Border BorderBrush="Black" BorderThickness="1">
+        <Grid Background="#FFD6B0AC">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" ShowGridLines="True">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <DataGrid x:Name="GridCommandes" Grid.Row="0" ItemsSource="{Binding}" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Numero" Binding="{Binding Numero}"/>
+                        <DataGridTextColumn Header="Date" Width="200" Binding="{Binding Date}"/>
+                        <DataGridTextColumn Header="PrixTotal" Width="*" Binding="{Binding PrixTotal}"/>
+                    </DataGrid.Columns>
+                    <DataGrid.DataContext>
+                        <ProjetMacdo:Commande/>
+                    </DataGrid.DataContext>
+                </DataGrid>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <Button Content="VisualiserCommande" Height="40" Margin="230,0,0,0" Click="Button_Click"></Button>
+                </StackPanel>
+
+            </Grid>
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1">
+
+                <Grid Grid.Column="1">
+
+
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Border BorderBrush="Black" BorderThickness="1 0 0 0" Grid.RowSpan="3" Grid.Column="1" />
+
+                    <!-- Lignes de séparation horizontales -->
+                    <Border BorderBrush="Black" BorderThickness="0 1 0 0" Grid.Row="1" Grid.ColumnSpan="2" />
+                    <Border BorderBrush="Black" BorderThickness="0 1 0 0" Grid.Row="2" Grid.ColumnSpan="2" />
+
+                    <StackPanel  Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <Label Content="Commande numéro " VerticalAlignment="Center" FontSize="16"></Label>
+                        <Label x:Name="LabelNumero" Content="{Binding}" VerticalAlignment="Center" FontSize="16">
+                            <Label.DataContext>
+                                <ProjetMacdo:Commande/>
+                            </Label.DataContext>
+                        </Label>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="0" Grid.Column="1" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Lieu : " VerticalAlignment="Center" FontSize="15"></Label>
+                            <Label x:Name="LabelLieu" Content="{Binding}" VerticalAlignment="Center" FontSize="15" Background="{Binding Converter={StaticResource ColorConverter}, Mode=OneWay}"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Mode de paiement : " VerticalAlignment="Center" FontSize="15"></Label>
+                            <Label x:Name="LabelReglement" Content="{Binding}" VerticalAlignment="Center" FontSize="15"  Background="{Binding Converter={StaticResource ColorConverter}, Mode=OneWay}"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+                        <Label Content="Liste des burgers : "></Label>
+                        <DataGrid x:Name="GridBurger" ItemsSource="{Binding}" AutoGenerateColumns="False">
+                            <DataGrid.DataContext>
+                                <ProjetMacdo:Burger/>
+                            </DataGrid.DataContext>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Nom" Width="100" Binding="{Binding Nom}"/>
+                                <DataGridTextColumn Header="Quantité" Width="60" Binding="{Binding Quantite}"/>
+                                <DataGridTextColumn Header="Prix" Width="*" Binding="{Binding PrixTotal}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+                        <Label Content="Liste des boissons : "></Label>
+                        <DataGrid x:Name="GridBoisson" ItemsSource="{Binding}" AutoGenerateColumns="False">
+                            <DataGrid.DataContext>
+                                <ProjetMacdo:Boisson/>
+                            </DataGrid.DataContext>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Nom" Width="90" Binding="{Binding Nom}"/>
+                                <DataGridTextColumn Header="Glacons" Width="60" Binding="{Binding Glacons}"/>
+                                <DataGridTextColumn Header="Qtt" Width="30" Binding="{Binding Quantite}"/>
+                                <DataGridTextColumn Header="Prix" Width="*" Binding="{Binding PrixTotal}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical">
+                        <Label Content="Liste des accompagnements : "></Label>
+                        <DataGrid x:Name="GridFrites" ItemsSource="{Binding}" AutoGenerateColumns="False">
+                            <DataGrid.DataContext>
+                                <ProjetMacdo:Accompagnement/>
+                            </DataGrid.DataContext>
+
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Nom" Width="100" Binding="{Binding Nom}"/>
+                                <DataGridTextColumn Header="Quantité" Width="60" Binding="{Binding Quantite}"/>
+                                <DataGridTextColumn Header="Prix" Width="*" Binding="{Binding PrixTotal}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+
+
+
+                    <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Vertical">
+                        <Label Content="Liste des menus : "></Label>
+                        <DataGrid x:Name="GridMenu" ItemsSource="{Binding}" AutoGenerateColumns="False">
+                            <DataGrid.DataContext>
+                                <ProjetMacdo:Accompagnement/>
+                            </DataGrid.DataContext>
+
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Nom" Width="80" Binding="{Binding Nom}"/>
+                                <DataGridTextColumn Header="Boisson" Width="50" Binding="{Binding Boisson.Nom}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Quantité" Width="60" Binding="{Binding Quantite}"/>
+                                <DataGridTextColumn Header="Prix" Width="*" Binding="{Binding PrixTotal}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+</Window>
